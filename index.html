@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Conômetro</title>
+</head>
+
+<body>
+    <h1>Conômetro</h1>
+
+    <div class="values-wrapper">
+        <h2 id="value1">00:</h2>
+        <h2 id="value2">00:</h2>
+        <h2 id="value3">00</h2>
+    </div>
+
+    <div class="button-wrapped">
+        <button class="btn reset" onclick="resetar()">
+            <i data-lucide="rotate-ccw"></i>
+            Resetar
+        </button>
+
+        <button class="btn start" onclick="iniciar()">
+            <i data-lucide="play"></i>
+            Iniciar
+        </button>
+
+        <button class="btn pause" onclick="pausar()">
+            <i data-lucide="pause"></i>
+            Pausar
+        </button>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+<script src="./scripts.js"></script>
+
+</html>
